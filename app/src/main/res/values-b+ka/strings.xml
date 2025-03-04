@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">find movie</string>
+    <string name="hello_blank_fragment">გამარჯობა</string>
+    <string name="register">რეგისტრაცია</string>
+    <string name="fullname">სახელი და გვარი</string>
+    <string name="email">ელ-ფოსტა</string>
+    <string name="password">პაროლი</string>
+    <string name="confirm_password">დაადასტურეთ პაროლი</string>
+    <string name="have_account_sign_in">გაქვთ ანგარიში? შებრძანდით</string>
+    <string name="login">აუტორიზაცია</string>
+    <string name="welcome_back">გამარჯობა, </string>
+    <string name="search">ძებნა</string>
+    <string name="my_list">ჩემი ფილმები</string>
+    <string name="recommended">რეკომენდებული ფილმები</string>
+    <string name="actors">მსახიობები</string>
+    <string name="open_imdb">Open IMDb</string>
+    <string name="releaseDateAndLanguage">%1$s, %2$s</string>
+    <string name="please_enter_email_and_password">გთხოვთ, შეიყვანეთ ელფოსტა და პაროლი</string>
+    <string name="log_out">გასვლა</string>
+    <string name="do_you_want_to_log_out">ნამდვილად გსურთ გასვლა?</string>
+    <string name="yes">დიახ</string>
+    <string name="no">არა</string>
+    <string name="all">All</string>
+    <string name="recommended_movies">რეკომენდებული ფილმები</string>
+    <string name="loading">იტვირთება</string>
+    <string name="error_loading_username">ვერ ჩაიტვირთა</string>
+    <string name="no_results_found">ფილმი ვერ მოიძებნა</string>
+    <string name="an_error_occurred">დაფიქსირდა შეცდომა</string>
+    <string name="movie_added_to_favorites">კინო დაემატა ფავორიტებში</string>
+    <string name="failed_to_add_movie">ვერ დაემატა ფილმი ფავორიტებს: %1$s</string>
+    <string name="movie_removed_from_favorites">ფილმი წაიშალა ფავორიტებიდან</string>
+    <string name="failed_to_remove_movie">ფილმმი ვერ წაიშალა ფავორიტებიდან: %1$s</string>
+    <string name="passwords_do_not_match">პაროლი არ ემთხვევა</string>
+    <string name="all_fields_are_required">შეავსეთ ყველა ველი</string>
+    <string name="error">ერორი: %1$s</string>
+    <string name="errorr">ერორი: %1$s</string>
+</resources>

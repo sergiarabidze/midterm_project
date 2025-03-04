@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="auth_color">#1F1F29</color>
+    <color name="auth_btn">#6200EE</color>
+    <color name="auth_border">#BB86FC</color>
+    <color name="auth_button">#3700B3</color>
+    <color name="auth_text">#98FFFFFF</color>
+    <color name="auth_button_text">#474747</color>"
+    <color name="welcome_text_color">#B9C1D9</color>
+    <color name="edit_text_color">#131316</color>
+    <color name="search_tint">#575B66</color>
+    <color name="star_color">#FFFF00</color>
+    <color name="lightless_star">#DADADA</color>
+    <color name="yellow_button">#F5C518</color>
+    <color name="genre_color">#312F35</color>
+    <color name="red">#FB4D4D</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="primaryColor">#FF5722</color>
+    <color name="primaryLightColor">#FFCCBC</color>
 </resources>

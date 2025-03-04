@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.features.search.Search"
+    android:background="@color/auth_color">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/back_arrow_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/backarrow"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="6dp"
+        android:backgroundTint="@color/white"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:paddingVertical="14dp"
+        android:drawableStart="@drawable/search"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/edit_text_custom"
+        android:layout_marginHorizontal="43dp"
+        android:hint="@string/search"
+        android:textColorHint="@color/search_tint"
+        android:drawablePadding="12dp"
+        android:paddingEnd="34dp"
+        android:maxLines="1"
+        android:drawableEnd="@drawable/filter"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="23dp"
+        android:layout_marginHorizontal="12dp"/>
+
+    <include
+        android:id="@+id/emptyState"
+        layout="@layout/empty_search"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_recycler_id"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

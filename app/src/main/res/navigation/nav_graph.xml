@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/register">
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.findmovie.presentation.features.register.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_login2"
+            app:destination="@id/login2" />
+        <action
+            android:id="@+id/action_register_to_homePage"
+            app:destination="@id/homePage"
+            app:popUpTo="@id/register"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.findmovie.presentation.features.login.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login2_to_homePage"
+            app:destination="@id/homePage"
+            app:popUpTo="@id/login2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.findmovie.presentation.features.home_page.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePage_to_movieDetails"
+            app:destination="@id/movieDetails" />
+        <action
+            android:id="@+id/action_homePage_to_myList"
+            app:destination="@id/myList" />
+        <action
+            android:id="@+id/action_homePage_to_recommendedMovies"
+            app:destination="@id/recommendedMovies" />
+        <action
+            android:id="@+id/action_homePage_to_search"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_homePage_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetails"
+        android:name="com.example.findmovie.presentation.features.details.MovieDetails"
+        android:label="MovieDetails">
+        <argument
+            android:name="movie"
+            app:argType="com.example.findmovie.presentation.model.MoviesModel" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_register"
+        app:destination="@id/register"
+        app:popUpTo="@id/register"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/myList"
+        android:name="com.example.findmovie.presentation.features.my_list.MyList"
+        android:label="fragment_my_list"
+        tools:layout="@layout/fragment_my_list" >
+        <action
+            android:id="@+id/action_myList_to_movieDetails"
+            app:destination="@id/movieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendedMovies"
+        android:name="com.example.findmovie.presentation.features.recomended_movies.RecommendedMovies"
+        android:label="RecommendedMovies" >
+        <action
+            android:id="@+id/action_recommendedMovies_to_movieDetails"
+            app:destination="@id/movieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.findmovie.presentation.features.search.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search_to_movieDetails"
+            app:destination="@id/movieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.findmovie.presentation.features.profile.Profile"
+        android:label="Profile" />
+</navigation>
